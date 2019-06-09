@@ -1,0 +1,121 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 36px;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+    grid-template-areas: "a a a a" "a a a a" "b b c c" "d e f g" "h h j i" "m m n n"
+}
+.grid-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item-main {
+    background-image: url(../img/bg-main.png);
+    background-position: center;
+    grid-area: a;
+    padding: 280px 0 345px 210px;
+}
+.grid-item-main h1{
+    margin: 0 0 20px 0;
+}
+.grid-item-main p{
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.grid-item-red {
+    background-image: url(../img/bg-red.png);
+    background-position: center;
+    grid-area: b;
+    /*height: 500px;*/
+}
+.grid-item-lgray {
+    background-color: #f3f1ef;
+    grid-area: c;
+    padding: 110px 190px 120px 60px;
+    color: #666666;
+}
+.grid-item-lgray h2{
+    text-transform: uppercase;
+}
+.grid-item-lgray p{
+    font-weight: 700;
+}
+.grid-item-pic1 {
+    display: block;
+    height: 510px;
+    background-image: url(../img/bg-one.png);
+    background-position: center;
+    grid-area: d;
+}
+.grid-item-pic2 {
+    display: block;
+    height: 510px;
+    background-image: url(../img/bg-two.png);
+    background-position: center;
+    grid-area: e;
+}
+.grid-item-pic3 {
+    display: block;
+    height: 510px;
+    background-image: url(../img/bg-three.png);
+    background-position: center;
+    grid-area: f;
+}
+.grid-item-pic4 {
+    display: block;
+    height: 510px;
+    background-image: url(../img/bg-four.png);
+    background-position: center;
+    grid-area: g;
+}
+.grid-item-blue-text {
+    grid-area: h;
+}
+.grid-item-pic5 {
+    background-image: url(../img/bg-five.png);
+    background-position: center;
+    grid-area: j;
+}
+.grid-item-bluebg {
+    grid-area: i;
+}
+.grid-item-blue {
+    background-color: #3f729b;
+    color: #fff;
+}
+.grid-item-green {
+    background-color: #2ebd59;
+    
+    grid-area: m;
+}
+.grid-item-gray {
+    background-color: #282b2f;
+    
+    grid-area: n;
+    
+}
+.grid-item-green, .grid-item-gray, .grid-item-blue-text{
+    color: #fff;
+    padding: 135px 115px 145px 210px;
+}
+.button{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
